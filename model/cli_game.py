@@ -1,12 +1,12 @@
 from model.board import Board
 from model.enums.player_chars import PlayerChars
-from model.players.human_player import HumanPlayer
+from model.players.human_cli_player import HumanCLIPlayer
 
 
-class Game:
+class CLIGame:
     def __init__(self):
-        self.first_player = HumanPlayer(PlayerChars.PLAYER_ONE)
-        self.second_player = HumanPlayer(PlayerChars.PLAYER_TWO)
+        self.first_player = HumanCLIPlayer(PlayerChars.PLAYER_ONE)
+        self.second_player = HumanCLIPlayer(PlayerChars.PLAYER_TWO)
         self.current_player = self.first_player
         self.board = Board()
 

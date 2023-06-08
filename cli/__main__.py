@@ -1,5 +1,5 @@
-from model.game import Game
+from model.cli_game import CLIGame
 
 if __name__ == '__main__':
-    game = Game()
+    game = CLIGame()
     game.play()
