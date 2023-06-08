@@ -20,7 +20,7 @@ class GameTest(unittest.TestCase):
     def test_swap_players_swap_from_second_to_first(self):
         game = Game()
         game.swap_players()
-        self.assertEquals(game.second_player, game.current_player)
+        self.assertEqual(game.second_player, game.current_player)
         game.swap_players()
         self.assertEqual(game.first_player, game.current_player)
 
